@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-EMAIL = "muhamed.yousof@kortobaa.com"
+EMAIL = os.getenv("EMAIL")
 API_KEY = os.getenv("JIRA_API_KEY")
 DOMAIN = os.getenv("DOMAIN")
 PROJECT_KEY = "NA"
